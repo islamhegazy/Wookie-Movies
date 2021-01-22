@@ -1,0 +1,33 @@
+<div>
+    <mat-toolbar color="primary">
+        <div>
+            <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        </div>
+
+        <a mat-button class="companyName" [routerLink]="['../home']">
+            <span>Wookie Movies</span>
+        </a>
+        <span class="example-spacer"></span>
+
+        <span class="example-spacer"></span>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Serach..." (keyup.enter)="onSearch($event)">
+            <mat-icon matSuffix class="search-icon">search</mat-icon>
+        </mat-form-field>
+    </mat-toolbar>
+    <mat-sidenav-container class="example-container">
+
+        <mat-sidenav color="primary" #sidenav mode="over" opened="false">
+            <div class="col-sm-12">
+                <div class="d-flex flex-column">
+                    <a mat-button [routerLink]="['pages/home']">Home</a>
+                </div>
+            </div>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <ng-content></ng-content>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

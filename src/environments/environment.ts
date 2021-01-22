@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiurl:'https://wookie.codesubmit.io/movies',
+  token:'Wookie2019'
 };
 
 /*

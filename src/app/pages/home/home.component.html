@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let genre of genreList">
+            <div class="col-12 pt-5">
+                <h2 class="m-0">{{genre}}</h2>
+                <div class="row">
+                    <ng-container *ngFor="let movie of movieList">
+                        <div class="col-lg-3 col-md-4 col-6 mt-3">
+                            <app-movie [movieInput]="movie"></app-movie>
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+        </ng-container>
+
+    </div>
+</div>

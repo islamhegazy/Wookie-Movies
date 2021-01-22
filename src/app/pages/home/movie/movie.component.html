@@ -1,0 +1,19 @@
+<a [routerLink]="['../movie/details',movie.id]">
+    <mat-card class="card">
+        <img mat-card-image [src]="movie.backdrop" [alt]="movie.title">
+        <mat-card-content class="m-0">
+            <mat-card-title>{{movie.title}}</mat-card-title>
+            <div class="d-flex justify-content-between mt-3">
+                <span>
+                    {{movie.length}}
+                </span>
+                <span>
+                    {{movie.released_on | date:'yyyy'}}
+                </span>
+            </div>
+        </mat-card-content>
+        <span class="card__rating">
+            <span class="material-icons">stars</span> {{movie.imdb_rating}}/10
+        </span>
+    </mat-card>
+</a>

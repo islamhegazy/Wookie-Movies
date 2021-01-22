@@ -1,0 +1,58 @@
+.card {
+    .card__rating {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+        top: 5px;
+        right: 3px;
+        z-index: 3;
+        transition: 0.5s;
+        pointer-events: none;
+        height: 30px;
+        width: auto;
+        padding: 0 7px;
+        transform: scale(0.8);
+        border-radius: 5px;
+        background-color: rgb(21 31 48 / 49%);
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: default;
+        .material-icons {
+            width: 40px;
+            height: auto;
+            transition: fill 0.5s;
+            color: #f9be30;
+        }
+    }
+    .mat-card-title {
+        font-weight: 500;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        transition: 0.5s;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+    }
+    &:hover {
+        box-shadow: none;
+        .mat-card-title {
+            color: #2f80ed;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.mat-card-image {
+    height: 200px;
+}
