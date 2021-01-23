@@ -28,7 +28,6 @@
                                     <h6>Classification:</h6>
                                     <p>{{movieDetail.classification}}</p>
                                 </div>
-
                                 <div class="sb-it">
                                     <h6>Director: </h6>
                                     <p>{{movieDetail.director}}</p>
@@ -39,7 +38,6 @@
                                         <ng-container *ngFor="let cast of movieDetail.cast;let isLast=last">
                                             {{cast}}{{isLast ? '' : ', '}}
                                         </ng-container>
-
                                     </p>
                                 </div>
                                 <div class="sb-it">
@@ -48,7 +46,6 @@
                                         <ng-container *ngFor="let genre of movieDetail.genres;let isLast=last">
                                             {{genre}}{{isLast ? '' : ', '}}
                                         </ng-container>
-
                                     </p>
                                 </div>
                                 <div class="sb-it">
@@ -59,13 +56,11 @@
                                     <h6>Run Time:</h6>
                                     <p>{{movieDetail.length}}</p>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>

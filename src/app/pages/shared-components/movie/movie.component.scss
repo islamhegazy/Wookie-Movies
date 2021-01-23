@@ -55,4 +55,7 @@ a {
 
 .mat-card-image {
     height: 200px;
+    @media (max-width: 575.9px) {
+        height: 277px;
+    }
 }

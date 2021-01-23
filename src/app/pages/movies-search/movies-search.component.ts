@@ -1,8 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { WookieMovie } from '../../../logic/models/wookie-movie.model';
-import { WookieMoviesService } from '../../../logic/services/wookie-movies.service';
+import { WookieMovie } from '../../logic/models/wookie-movie.model';
+import { WookieMoviesService } from '../../logic/services/wookie-movies.service';
 
 @Component({
   selector: 'app-movies-search',

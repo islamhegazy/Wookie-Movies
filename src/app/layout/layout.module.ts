@@ -22,8 +22,7 @@ const NB_MODULES = [
 const COMPONENTS = [
   HeaderComponent
 ];
-const PIPES = [
-];
+
 
 @NgModule({
   imports: [CommonModule, ...NB_MODULES],

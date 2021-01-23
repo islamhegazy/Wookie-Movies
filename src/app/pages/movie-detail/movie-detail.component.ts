@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { WookieMoviesService } from '../../../logic/services/wookie-movies.service';
-import { WookieMovie } from '../../../logic/models/wookie-movie.model';
+import { WookieMoviesService } from '../../logic/services/wookie-movies.service';
+import { WookieMovie } from '../../logic/models/wookie-movie.model';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({

@@ -12,7 +12,7 @@
         <span class="example-spacer"></span>
 
         <span class="example-spacer"></span>
-        <mat-form-field class="example-full-width">
+        <mat-form-field class="example-full-width" floatLabel="never">
             <input matInput placeholder="Serach..." (keyup.enter)="onSearch($event)">
             <mat-icon matSuffix class="search-icon">search</mat-icon>
         </mat-form-field>
@@ -21,8 +21,8 @@
 
         <mat-sidenav color="primary" #sidenav mode="over" opened="false">
             <div class="col-sm-12">
-                <div class="d-flex flex-column">
-                    <a mat-button [routerLink]="['pages/home']">Home</a>
+                <div class="d-flex flex-column mt-3">
+                    <a class="mb-2" mat-button [routerLink]="['pages/home']">Home</a>
                 </div>
             </div>
         </mat-sidenav>
